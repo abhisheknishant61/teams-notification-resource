@@ -14,4 +14,4 @@ before_script:
 
 script:
   - docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
-  - travis_wait 40 docker buildx build --platform linux/amd64,linux/arm64 -t abhishek138/docker-alpine1:$TRAVIS_TAG -t abhishek138/docker-alpine1:latest --push . 2> /dev/null;
+  - travis_wait 40 docker buildx build --platform linux/amd64,linux/arm64 -t abhishek138/team-notification1:$TRAVIS_TAG -t abhishek138/team-notification1:latest --push . 2> /dev/null;
